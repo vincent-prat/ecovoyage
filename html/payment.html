@@ -10,29 +10,29 @@
     <main>
         <h1>Paiement</h1>
         <form action="" method="post">
-            <input type="text" name="name" placeholder="Nom">
+            <input type="text" name="name" placeholder="Nom" autocomplete="family-name">
             <br>
-            <input type="text" name="firstname" placeholder="Prénom">
+            <input type="text" name="firstname" placeholder="Prénom" autocomplete="given-name">
             <br>
-            <input type="text" name="email" placeholder="Email">
+            <input type="text" name="email" placeholder="Email" autocomplete="email">
             <br>
-            <input type="text" name="phone" placeholder="Téléphone">
+            <input type="text" name="phone" placeholder="Téléphone" autocomplete="tel">
             <br>
             <input type="number" name="voyageurs" id="voyageurs" placeholder="Nb de voyageurs">
             <fieldset>
                 <legend>Vous reservez pour</legend>
-                <input type="radio" name="vous" id="vous" value="1">
+                <input type="radio" name="vous" id="vous" value="vous">
                 <label for="vous">vous</label>
-                <input type="radio" name="autre" id="autre" value="2">
+                <input type="radio" name="autre" id="autre" value="autre">
                 <label for="autre">quelqu'un d'autre</label>
             </fieldset>
             <fieldset>
                 <legend>Modalité de reglement</legend>
-                <input type="radio" name="reglement" id="cb" value="1">
+                <input type="radio" name="reglement" id="cb" value="carte_credit">
                 <label for="reglement">carte de crédit</label>
-                <input type="radio" name="reglement" id="paypal" value="2">
+                <input type="radio" name="reglement" id="paypal" value="paypal">
                 <label for="paypal">Paypal</label>
-                <input type="radio" name="googlepay" id="googlepay" value="3">
+                <input type="radio" name="googlepay" id="googlepay" value="googlepay">
                 <label for="googlepay">Google Pay</label>
             </fieldset>
         </form>
