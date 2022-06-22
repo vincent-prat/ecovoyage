@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil Ecovoyage</title>
+</head>
+<body>
+    <h1>BIENVENUE SUR ECOTRIP</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Dates voyage</legend>
+            <label for="depart">Départ</label>
+            <input type="date" name="date_depart" id="depart" required="required">
+            <label for="retour">Retour</label>
+            <input type="date" name="date_retour" id="retour" required="required">
+        </fieldset>
+        <fieldset>
+            <legend>Destination</legend>
+            <input type="text" name="destination" id="destination" placeholder="Pays ou Région de destination">
+        </fieldset>
+        <fieldset>
+            <legend>Déplacements</legend>
+            <label for="bus">bus</label>
+            <input type="radio" name="deplacements" id="bus">
+            <label for="covoit">covoiturage</label>
+            <input type="radio" name="deplacements" id="covoit">
+            <label for="avion">avion</label>
+            <input type="radio" name="deplacements" id="avion">
+            <label for="bateau">bateau</label>
+            <input type="radio" name="deplacements" id="bateau">
+            <label for="voiture">voiture</label>
+            <input type="radio" name="deplacements" id="voiture">
+        </fieldset>
+        <fieldset>
+            <legend>Hébergement</legend>
+            <input type="radio" name="hebergement" id="insolite">
+            <label for="insolite">insolite</label>
+            <input type="radio" name="hebergement" id="confort">confort
+            <label for="confort">confort</label>
+            <input type="radio" name="hebergement" id="hotel">hotel
+            <label for="hotel">hotel</label>
+            <input type="radio" name="hebergement" id="camping">camping
+            <label for="camping">camping</label>
+            <input type="radio" name="hebergement" id="chambres-hôtes">chambres d’hôtes
+            <label for="chambres-hôtes">chambres d’hôtes</label>
+            <input type="radio" name="hebergement" id="glamping">glamping
+            <label for="glamping">glamping</label>
+        </fieldset>
+        <fieldset>
+            <legend>Expérience</legend>
+            <label for="famille">famille</label>
+            <input type="radio" name="experience" id="famille">
+            <label for="amoureux">en amoureux</label>
+            <input type="radio" name="experience" id="amoureux">
+            <label for="amis">entre amis</label>
+            <input type="radio" name="experience" id="amis">
+            <label for="mer">mer</label>
+            <input type="radio" name="experience" id="mer">
+            <label for="montagne">montagne</label>
+            <input type="radio" name="experience" id="montagne">
+            <label for="nature">nature</label>
+            <input type="radio" name="experience" id="nature">
+            <label for="ville">ville</label>
+            <input type="radio" name="experience" id="ville">
+            <label for="bien-être">bien être</label>
+            <input type="radio" name="experience" id="bien-être">
+            <label for="campagne">campagne</label>
+            <input type="radio" name="experience" id="campagne">
+        </fieldset>
+        <fieldset>
+            <legend>Budget</legend>
+            <input type="range" id="budget" name="budget" min="100" max="5000" value="2000" step="250">
+            <label for="budget">€</label>
+        </fieldset>
+
+        <input type="submit" value="Envoyer">
+    </form>
+    <div class="slider-container" style="display: inline;">Destinations <br>
+        <img class="slide-img" src="http://via.placeholder.com/150x150">
+        <img class="slide-img" src="http://via.placeholder.com/150x150">
+        <img class="slide-img" src="http://via.placeholder.com/150x150">
+    </div>
+</body>
+</html>

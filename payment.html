@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Paiement</h1>
+        <form action="" method="post">
+            <input type="text" name="name" placeholder="Nom">
+            <br>
+            <input type="text" name="firstname" placeholder="Prénom">
+            <br>
+            <input type="text" name="email" placeholder="Email">
+            <br>
+            <input type="text" name="phone" placeholder="Téléphone">
+            <br>
+            <input type="number" name="voyageurs" id="voyageurs" placeholder="Nb de voyageurs">
+            <fieldset>
+                <legend>Vous reservez pour</legend>
+                <input type="radio" name="vous" id="vous" value="1">
+                <label for="vous">vous</label>
+                <input type="radio" name="autre" id="autre" value="2">
+                <label for="autre">quelqu'un d'autre</label>
+            </fieldset>
+            <fieldset>
+                <legend>Modalité de reglement</legend>
+                <input type="radio" name="reglement" id="cb" value="1">
+                <label for="reglement">carte de crédit</label>
+                <input type="radio" name="reglement" id="paypal" value="2">
+                <label for="paypal">Paypal</label>
+                <input type="radio" name="googlepay" id="googlepay" value="3">
+                <label for="googlepay">Google Pay</label>
+            </fieldset>
+        </form>
+        <section>
+            <ul>
+                <li>conditions de réservation</li>
+                <li>conditions générales de ventes</li>
+                <li>conditions générales d'utilisation</li>
+                <li>charte de confidentialité</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
